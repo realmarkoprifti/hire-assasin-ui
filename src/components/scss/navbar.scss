@@ -1,0 +1,32 @@
+.navbar {
+    background-color: rgb(33, 135, 182);
+    width: 100%;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    button {
+        background: transparent;
+        border: none;
+        border-radius: 10px;
+        height: 50px;
+        margin-right: 20px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        a {
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+    }
+
+    h2 {
+        margin-right: auto;
+        margin-left: 10px;
+    }
+}

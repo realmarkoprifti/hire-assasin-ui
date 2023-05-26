@@ -1,0 +1,25 @@
+.track {
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    input[type="submit"] {
+        margin-top: 15px;
+        background-color: rgb(19, 130, 182);
+        border-radius: 5px;
+        color: white;
+        border: none;
+        height: 50px;
+        width: 100%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    input[type="number"] {
+        width: 500px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
