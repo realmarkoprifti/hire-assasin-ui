@@ -62,7 +62,7 @@ function TrackAssasination() {
           setError(true)
         })
 
-      }} animate={error ? {x: [-20, 20, -20, 0]} : !error && {x: [-1050, 0, 30, 0]}} transition={{duration:0.3}} onAnimationEnd={() => setError(false)}>
+      }} animate={error ? {x: [-20, 20, -20, 0]} : error || {x: [-1050, 0, 30, 0]}} transition={{duration:0.3}} onAnimationEnd={() => setError(false)}>
         <Form.Label>Enter Assassination ID</Form.Label>
         <Form.Control id="track_number" type='number' name='assasinationID' onInput={(event) => {event.target.value=event.target.value.slice(0,event.target.maxLength)}} maxLength={5} />
         <ReCaptcha sitekey='6LfPPj0mAAAAAO080bTssEfY_IzszIEJz0COlsd6' ref={recaptchaRef} onChange={() => console.log(recaptchaRef.current.getValue())} />
